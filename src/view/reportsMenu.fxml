@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportMenuController">
+   <children>
+      <Label layoutX="279.0" layoutY="14.0" text="Reports">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="51.0" text="Appointment types by month:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="appTypesList" layoutX="51.0" layoutY="104.0" prefHeight="200.0" prefWidth="228.0" />
+      <Label fx:id="numDifAppsLabel" layoutX="238.0" layoutY="34.0" prefHeight="68.0" prefWidth="52.0">
+         <font>
+            <Font size="46.0" />
+         </font></Label>
+      <ComboBox fx:id="monthComboBox" layoutX="51.0" layoutY="76.0" onAction="#onActionMonthSelected" prefWidth="150.0" promptText="Select Month" />
+      <Button layoutX="379.0" layoutY="260.0" mnemonicParsing="false" onAction="#onActionDisplayAppointmentMenu" prefHeight="25.0" prefWidth="79.0" text="Back" />
+      <Label layoutX="334.0" layoutY="89.0" text="Busiest User:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="busiestUserLabel" layoutX="444.0" layoutY="87.0" prefHeight="17.0" prefWidth="121.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></Label>
+      <Label layoutX="334.0" layoutY="122.0" text="With">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="busiestUserAppsLabel" layoutX="388.0" layoutY="120.0" prefHeight="45.0" prefWidth="43.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="122.0" text="Appointments">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

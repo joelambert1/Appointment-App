@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyAppointmentController">
+   <children>
+      <Button layoutX="461.0" layoutY="283.0" mnemonicParsing="false" onAction="#onActionDisplayAppointmentMenu" text="Back" />
+      <Label layoutX="123.0" layoutY="14.0" prefHeight="27.0" prefWidth="150.0" text="Edit Appointment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutX="19.0" layoutY="53.0" prefHeight="200.0" prefWidth="68.0" spacing="25.0">
+         <children>
+            <Label text="Title:" />
+            <Label text="Description:" />
+            <Label text="Type:" />
+            <Label text="Location:" />
+            <Label text="Customer:" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="101.0" layoutY="53.0" prefHeight="200.0" prefWidth="177.0" spacing="17.0">
+         <children>
+            <TextField fx:id="titleField" />
+            <TextField fx:id="descriptionField" />
+            <TextField fx:id="typeField" />
+            <TextField fx:id="locationField" layoutX="10.0" layoutY="77.0" />
+            <ChoiceBox fx:id="customerChoiceBox" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Button layoutX="101.0" layoutY="270.0" mnemonicParsing="false" onAction="#onActionAcceptChangesButtonPushed" text="Accept Changes" textFill="#39ac12" />
+      <Button layoutX="221.0" layoutY="270.0" mnemonicParsing="false" onAction="#onActionDeleteApp" text="Delete" textFill="#ae0404" />
+      <VBox alignment="CENTER_LEFT" layoutX="289.0" layoutY="93.0" prefHeight="121.0" prefWidth="102.0" spacing="25.0">
+         <children>
+            <Label text="Appointment Date:" />
+            <Label layoutX="10.0" layoutY="145.0" text="Start Time:" />
+            <Label layoutX="10.0" layoutY="208.0" text="Duration:" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="394.0" layoutY="93.0" prefHeight="121.0" prefWidth="102.0" spacing="17.0">
+         <children>
+            <DatePicker fx:id="datePicker" />
+            <ComboBox fx:id="startChoiceBox" prefWidth="150.0" />
+            <ChoiceBox fx:id="durationChoiceBox" layoutX="10.0" layoutY="204.0" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="minuteBox" layoutX="511.0" layoutY="181.0" prefHeight="25.0" prefWidth="75.0" promptText="Select" />
+      <Label layoutX="536.0" layoutY="206.0" text="Mins" />
+      <Label layoutX="429.0" layoutY="206.0" text="Hours" />
+   </children>
+</AnchorPane>
