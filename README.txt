@@ -1,4 +1,6 @@
-Appointment scheduling app - Users can schedule appointments, add/edit customers and appointments as well as view reports and other relevant information.
+Appointment scheduling app that uses Java, MySQL, Javafx
+
+- Users can schedule appointments, add/edit customers and appointments as well as view reports and other relevant information.
 
 The app will add a test user with password test if no users are in DB, it will also add Countries and associated cities if there are none already in the DB..
 -- Each user's schedule can be filtered at the appointment menu
