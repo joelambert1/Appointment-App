@@ -1,4 +1,4 @@
-/* app start
+/* app start point
  */
 package appointmentapp;
 
